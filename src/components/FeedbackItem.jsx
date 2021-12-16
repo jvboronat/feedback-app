@@ -1,9 +1,9 @@
-import {useState} from 'react'
+//import {useState} from 'react'
 
 
-function FeedbackItem() {
-    const [rating, setRating] = useState(7)
-    const [text, setText] = useState('This is an example of Feedback Item')
+function FeedbackItem({item}) {
+    //const [rating, setRating] = useState(7)
+    //const [text, setText] = useState('This is an example of Feedback Item')
 
 /*     const hadcleClick = () => {
 
@@ -14,12 +14,9 @@ function FeedbackItem() {
  */
     return (
         <div className="card">
-            <div className="num-display"> {rating}</div>
-            <div className="text-display">{text}        
+            <div className="num-display"> {item.rating}</div>
+            <div className="text-display">{item.text}        
             </div>
-{/*             <button onClick={hadcleClick}> Click
-
-            </button> */}
             
         </div>
     )
