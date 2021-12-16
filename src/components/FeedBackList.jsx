@@ -1,7 +1,7 @@
 import FeedbackItem from "./FeedbackItem"
 import PropTypes from 'prop-types'
 
-function FeedBackList({items}) {
+function FeedBackList({items, handleDelete}) {
 
     //console.log(items);
 
@@ -12,7 +12,9 @@ function FeedBackList({items}) {
     return (
         <div  className="feedback-list"> 
             {items.map((item)=> 
-                {return (<FeedbackItem key={item.id} item={item}/> )  })
+                {return (
+                <FeedbackItem handleDelete={handleDelete} key={item.id} item={item}/> 
+                )  })
              }
         </div>
     )

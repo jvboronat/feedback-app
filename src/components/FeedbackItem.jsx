@@ -2,21 +2,16 @@
 
 import Card from './shared/Card'
 import { PropTypes } from "prop-types"
+import {FaTimes} from 'react-icons/fa'
 
-function FeedbackItem({item}) {
-    //const [rating, setRating] = useState(7)
-    //const [text, setText] = useState('This is an example of Feedback Item')
+function FeedbackItem({item, handleDelete}) {
 
-/*     const hadcleClick = () => {
-
-        setRating((prev) => {
-            return prev + 1
-        })
-    }
- */
     return (
         <Card reverse={false}> 
             <div className="num-display"> {item.rating}</div>
+            <button className="close" onClick={() => handleDelete(item.id)}>
+                <FaTimes color='purple'></FaTimes>
+            </button>
             <div className="text-display">{item.text}  </div>
             
         </Card>
