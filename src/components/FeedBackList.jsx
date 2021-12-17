@@ -23,7 +23,7 @@ function FeedBackList({items, handleDelete}) {
 FeedBackList.propTypes = {
     items: PropTypes.arrayOf(
         PropTypes.shape({
-            id: PropTypes.number.isRequired,
+            id: PropTypes.string.isRequired,
             text: PropTypes.string.isRequired,
             rating: PropTypes.number.isRequired,
         }
