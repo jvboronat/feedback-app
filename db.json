@@ -16,9 +16,9 @@
       "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. consequuntur vel vitae commodi alias voluptatem est voluptatum ipsa quae."
     },
     {
-      "rating": "8",
-      "test": "This is a feedback from Postman 2",
-      "id": 5
+      "id": 8,
+      "text": "Feedback added and updated",
+      "rating": 9
     }
   ]
 }

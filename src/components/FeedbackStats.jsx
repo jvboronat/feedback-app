@@ -14,6 +14,7 @@ function FeedbackStats({items}) {
             return acc + item.rating
         },0
         )
+
         // Regular 
         return (total / feedback.length).toFixed(1).replace(/[.,]0$/,'')
     }
