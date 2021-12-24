@@ -30,7 +30,7 @@ function FeedbackForm() {
         }
         else
         {
-            if (e.target.value == 0)
+            if (e.target.value === 0)
                 setMessage('')
             else
                 setMessage('Text must be at least 10 characters')
