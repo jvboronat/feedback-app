@@ -19,6 +19,9 @@ function RatingSelect({select}) {
       {
         setSelected(feedbackEdit.item.rating)
       }
+      else{
+        setSelected(10)
+      }
     }, [feedbackEdit])
 
     return (
